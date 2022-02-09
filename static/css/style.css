@@ -1,0 +1,53 @@
+h1 {
+   color: #d22e3a
+}
+
+form.login_form {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 450px;
+    background-color: #ffcc00;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+}
+.title {
+	padding-left: 10px;
+	line-height: 59px;
+}
+.title span {
+	display: inline;
+	background-color: #808080;
+}
+.title2 {
+	padding-left: 10px;
+	line-height: 59px;
+}
+.title2 span2 {
+	display: inline;
+	background-color: #5a916e;
+}
+.title3 {
+	padding-left: 10px;
+	line-height: 59px;
+}
+.title3 span3 {
+	display: inline;
+	background-color: #808080;
+}
+.title4 {
+	padding-left: 10px;
+	line-height: 59px;
+}
+.title4 span4 {
+	display: inline;
+	background-color: #ffff00;
+}
+.title5 {
+	padding-left: 10px;
+	line-height: 59px;
+}
+.title5 span5 {
+	display: inline;
+	background-color: #df0000;
+}
