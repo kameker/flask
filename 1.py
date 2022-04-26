@@ -76,11 +76,27 @@ def choice(planet):
                         <h2 class="title"> <span>{lwords[0]}</span> </h2>
                         <h3 class="title2"> <span2>{lwords[1]}</span2> </h3>
                         <h3 class="title3"> <span3>{lwords[2]}</span3> </h3>
-                        <h4 class="title4"> <span4>{lwords[3]} </h4>
-                        <h5 class="title5"> <span5>{lwords[4]}</span5> </h5>
                       </body>
                     </html>"""
 
-
+@app.route('/result/<nickname>/<int:level>/<float:rating>')
+def results(nickname, level, rating):
+    return f"""<!doctype html>
+                        <html lang="en">
+                        <head>
+                        <link rel="stylesheet" 
+                            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" 
+                            integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" 
+                            crossorigin="anonymous">
+                            <link rel="stylesheet" type="text/css" href="{url_for('static', filename='css/style.css')}" />
+                          </head>
+                          <body>
+                            <h1>Результаты отбора</h1>
+                            <h2>Претендент на участие в миссии {nickname}: </h2>
+                            <h3 class="title"> <span>Поздравляем! вам рейтинг после {level} этапа отбора</span> </h3>
+                            <h4 class="title2">составляет {rating}!</h4>
+                            <h5 class="title3"><span2>Желаем удачи!</span2></h5>
+                          </body>
+                        </html>"""
 if __name__ == '__main__':
     app.run(port=8080, host='127.0.0.1')
